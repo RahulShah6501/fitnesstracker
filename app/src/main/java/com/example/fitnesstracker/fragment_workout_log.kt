@@ -51,12 +51,10 @@ class WorkoutLogFragment : Fragment() {
 
         spinnerWorkoutType.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-                // Clear the workout duration when the workout type changes
                 etWorkoutDuration.text.clear()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
-                // No action needed here
             }
         }
 
