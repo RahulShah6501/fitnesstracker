@@ -17,7 +17,7 @@ class WorkoutLogFragment : Fragment() {
 
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var workoutAdapter: WorkoutAdapter
-    private val workouts = mutableMapOf<String, Int>() // Map to store cumulative counts
+    private val workouts = mutableMapOf<String, Int>() 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,7 +36,6 @@ class WorkoutLogFragment : Fragment() {
         val btnReset = view.findViewById<Button>(R.id.btn_reset)
         val recyclerViewWorkouts = view.findViewById<RecyclerView>(R.id.recycler_view_workouts)
 
-        // Set up the spinner with workout types
         ArrayAdapter.createFromResource(
             requireContext(),
             R.array.workout_types,
